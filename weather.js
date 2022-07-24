@@ -4,7 +4,7 @@
  async function weather(){
      let cityName = document.getElementById("name").value;
      let graphName=document.getElementById("graph").value;
-     let result = await fetch (`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${url}`);
+     let result = await fetch (`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${url}&units=metric`);
      let  data=await result.json();
      console.log(data);
     let i=0,k=0;
